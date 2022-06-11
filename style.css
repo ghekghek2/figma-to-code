@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+scroll-behavior: smooth;
+overflow: scroll;
+}
+
+
+
+
+ .container{
+   max-width: 1300px;
+
+
+ }
+
+
+
+.hero{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 100vh;
+
+margin: 0 auto!important;
+
+
+}
+
+
+
+
+.hero-content{
+
+ 
+ z-index: 3;
+ height: 100%;
+
+  
+  display: flex;
+
+
+  flex-direction: column;
+  
+ 
+}
+
+.hero-content button{
+  width: fit-content;
+  padding: 1rem 2rem;
+}
+
+
+.hero-content h1{
+font-size: 3.5rem;
+max-width: 80%;
+}
+
+.hero-content p{
+font-size: 1.25rem;
+
+}
+
+@media only screen and (max-width: 1000px) {
+  .hero-front-wrapper{
+  order: 2;
+  
+}
+}
+
+@media only screen and (max-width: 700px) {
+.container{
+  min-width: 100%;
+
+}
+
+
+
+}
+
+.hero-back img{
+  width: 900px;
+  height: 900px;
+ margin-top: 50rem;
+
+}
+
+.hero-image{
+  position: relative;
+
+
+}
+#rotate{
+  transition: transform .8s ease-in-out;  
+  cursor: pointer;
+}
+
+
+
+.hero-back{
+  position:absolute;
+content: "";
+
+
+width: 80rem;
+
+height: 80rem;
+top: -1020px;
+right: -400px;
+background: rgb(240, 148, 44);
+border-radius: 50%;
+display: flex;
+
+align-items: flex-end;
+overflow: hidden;
+box-shadow: 19px -17px 14px -5px rgba(66,63,63,0.75) inset;
+-webkit-box-shadow: 19px -17px 14px -5px rgba(66,63,63,0.75) inset;
+-moz-box-shadow: 19px -17px 14px -5px rgba(66,63,63,0.75) inset;
+
+
+
+display: flex;
+justify-content: center;
+
+
+}
+/* .container::before{
+  position: absolute;
+content: "";
+width: 1400px;
+height: 1400px;
+top: -800px;
+right: -500px;
+background: rgb(173, 236, 148);
+border-radius: 50%;
+} */
+
+.hero-image .hero-front{
+position: relative;
+  z-index: 3;
+ 
+display: flex;
+justify-content: flex-end;
+align-items: flex-end;
+height: 25rem;
+padding: 1rem;
+
+
+}
+.hero-front .act-image{
+  width: 20rem;
+  height: 20rem;
+ 
+}
+
+.dish{
+  display: flex;
+  height: fit-content;
+align-items: flex-end;
+justify-content: flex-end;
+}
+
+.dish button{
+  height: fit-content;
+
+}
+i{
+  font-size: 2rem;
+  cursor: pointer;
+  color: #F0942C;
+  user-select: none;
+}
+i:nth-child(1){
+
+  transform: rotate(180deg);
+}
+i:nth-child(2){
+ 
+  transform: rotate(180deg);
+}
